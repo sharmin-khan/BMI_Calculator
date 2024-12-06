@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .7;
+    z-index: -1;
+}
+
+#main {
+    background-color: #ffffff1f;
+    box-shadow: 0 0 4px 2px #fff;
+    width: 50%;
+    padding: 35px 25px 25px;
+    margin: 0 auto;
+    border-radius: 10px;
+
+}
+
+#main h1 {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#main h2 {
+    background-color: green;
+    color: #fff;
+    display: inline-block;
+    font-size: 50px;
+    font-weight: 900;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+#main form {
+    margin: 15px 0;
+}
+
+#main label {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    display: block;
+}
+
+#main input {
+    background-color: #ffffff70;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px 15px;
+    margin: 10px 0;
+}
+
+#main input:focus {
+    outline-offset: 1px;
+    outline: 1px solid #fff;
+}
+
+#main button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .5s;
+    margin-top: 15px;
+}
+
+#main button:hover {
+    background-color: #ffffff70;
+}
+
+::placeholder {
+    color: #fff;
+    font-size: 14px;
+    opacity: .7;
+    font-weight: 100;
+}
+
+.result,
+.info {
+    background-color: #ffffffbd;
+    padding: 20px 15px;
+    border-radius: 5px;
+    font-size: 20px;
+    line-height: 30px;
+
+}
+
+.info {
+    margin-top: 20px;
+}
+
+.result {
+    display: none;
+}
+
+@media screen and (max-width:420px) {
+
+    #main {
+        width: 85%;
+        margin: 20px auto;
+    }
+
+    #main input:focus {
+        outline-offset: 2px;
+    }
+}
